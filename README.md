@@ -16,10 +16,12 @@ The quickest way to run this script is by downloading it adding it to your (pyth
 1. Go to the folder you want to configure:
     - `cd ~/myproject/`
 2. Download the file:
-    - `wget https://raw.github.com/ischouten/PipPyEnv/master/pippy-env.sh; chmod +x pippy-env.sh`
-3. Run it
+    - `wget https://raw.github.com/ischouten/PipPyEnv/master/pippy-env.sh`
+3. Make it executable:
+    - `chmod +x pippy-env.sh`
+4. Run it 😃.
     - `./pippy-env.sh`
-4. From here on out, just use your project like you normally would with pipenv.
+5. From here on out, just use your project like you normally would with pipenv.
 
 You can keep this file tracked by git, as well as the `.python-version` file created by pyenv.
 However, do make sure you untrack .venv (most idea's do that for you anyway.)
@@ -63,4 +65,4 @@ Just adding the `PIPENV_VENV_IN_PROJECT` variable to your shell gives you basica
 - Non-bash users: (zsh etc...) you'll need to export to `.zshrc` instead of `.bashrc`.
 The shell variant is currently assumed to be bash.
 
-- Improvements or feedback are welcome :)
+- Improvements and feedback are welcome 🙃.
