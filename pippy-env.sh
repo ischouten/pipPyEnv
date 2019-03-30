@@ -70,13 +70,14 @@ else
   read -p 'There seems to be no python version prescribed yet. Please suggest something (default: 3.7.3):' TARGET_PYTHON_VERSION
 fi
 
-if [[ -z ${TARGET_PYTHON_VERSION} ]]; then
+if [[ ! -z ${TARGET_PYTHON_VERSION} ]]; then
   TARGET_PYTHON_VERSION=${DEFAULT_PYTHON}
 fi
 
-# To prevent anyone forgetting to do so, add the .venv folder to gitignore.
-touch .gitignore
-echo '.venv/' >> .gitignore
+# To prevent anyone forgetting to do so, add the .venv folder to gitignore if .gitignore does not exist yet.
+if [[ -f .gitignore ]]; then
+  echo '.venv/' >> .gitignore
+fi
 
 echo "Going to use python version ${TARGET_PYTHON_VERSION}"
 
