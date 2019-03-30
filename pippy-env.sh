@@ -1,16 +1,15 @@
 #!/bin/bash -i
 
 #========================================================================================
-# Title           : pyenv-setup.sh
+# Title           : PipPyEnv
 # Description     : This script will setup pyenv and pipenv to play nicely
 #                   together and setup your virtualenv with the correct python version.
 # Author		      : Igor Schouten
-# Github          : https://github.com/ischouten/pyenv-setup
+# Github          : https://github.com/ischouten/pipPyEnv
 # Date            : 20190330
 # Version         : 0.1
-# Usage		        : bash ./pyenv-setup.sh
-# Notes           : Tested on Ubuntu 18.04
-# License         : GPLv3
+# Usage		        : bash ./pippy-env.sh
+# License         : MIT
 #========================================================================================
 
 PYENV_URL=https://github.com/yyuu/pyenv.git
