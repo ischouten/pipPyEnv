@@ -10,9 +10,13 @@ The suggested setup is especially nice if you need to run different virtual envi
 
 The quickest way to run this script is by downloading it adding it to your (python) project:
 
-1. Go to the folder `cd ~/myproject/`
-2. Download the file: `wget https://raw.github.com/ischouten/PipPyEnv/master/pyenv-setup.sh`
-3. Run it `./pyenv-setup.sh`
+1. Go to the folder you want to configure:
+`cd ~/myproject/`
+1. Download the file:
+`wget https://raw.github.com/ischouten/PipPyEnv/master/pippy-env.sh`
+1. Run it:
+`./pippy-env.sh`
+1. From here on out, just use your project like you normally would with pipenv.
 
 You can keep this file tracked by git, as well as the `.python-version` file created by pyenv.
 However, do make sure you untrack .venv (most idea's do that for you anyway.)
@@ -46,6 +50,7 @@ I prefer the `.npm` way where the `.venv` file is created inside the project dir
 
 - I'm planning to add support for Fedora and Debian as I commonly run into those as well.
 
-- On MacOS , I'd suggest you use `homebrew` to install `pyenv` and `pipenv`. Just adding the `PIPENV_VENV_IN_PROJECT` variable to your shell gives you basically the same setup (which is also my preferred use.)
+- Might want to do MacOs as well although although you can just use `homebrew` to install `pyenv` and `pipenv`.
+Just adding the `PIPENV_VENV_IN_PROJECT` variable to your shell gives you basically the same setup (which is also my preferred use.)
 
 - Improvements or feedback are welcome :)
